@@ -1,3 +1,4 @@
+[![C++ Build](https://github.com/alokumar01/dynamic-network-routing-simulator/actions/workflows/c-cpp.yml/badge.svg?branch=main)](https://github.com/alokumar01/dynamic-network-routing-simulator/actions)
 # 🌐 Dynamic Network Routing Simulator
 ### (Dijkstra-Based Optimization Engine)
 
