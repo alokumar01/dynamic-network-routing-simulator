@@ -325,18 +325,17 @@ void loadDemoNetwork(NetworkSystem &network) {
     cout << RESET;
 
     vector<pair<int,int>> demoLinks = {
-        {0,1}, {0,2},
-        {1,3}, {2,3},
+        {0,1},
+        {0,2},
+        {1,3},
+        {2,3},
         {3,4},
         {4,5},
-        {5,6},
-        {6,7},
-        {2,6},
-        {1,4}
+        {1,4},
     };
 
     for(auto &link : demoLinks) {
-        int latency = rand() % 20 + 10; // 10–99 ms
+        int latency = rand() % 10 + 5; // 10–99 ms
         network.addLink(link.first, link.second, latency);
     }
 
@@ -363,7 +362,7 @@ int main() {
     int mode;
     cin >> mode;
 
-    NetworkSystem network( (mode == 1) ? 8 : 0 );
+    NetworkSystem network( (mode == 1) ? 6 : 0 );
 
     if(mode == 1) {
         network = NetworkSystem(8);
